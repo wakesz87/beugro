@@ -25,9 +25,9 @@ require_once("header.php");
                         <div class="card-body">
 
                             <form action="insert.php" method="post">
-                                <input type="text" class="form-control mb-4" placeholder=" Cikkszám " name="productid">
+                                <input type="number" class="form-control mb-4" placeholder=" Cikkszám " name="productid">
                                 <input type="text" class="form-control mb-4" placeholder=" Termék " name="product">
-                                <input type="text" class="form-control mb-4" placeholder=" Egység " name="productamount">
+                                <input type="number" class="form-control mb-4" placeholder=" Egység " name="productamount">
 
                                 <div class="col text-center">
                                       <button class="btn btn-primary"  name="submit">Bevételezés</button>
