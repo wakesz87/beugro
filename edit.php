@@ -38,9 +38,9 @@ while ($row = mysqli_fetch_assoc($result))
                     <div class="card-body">
 
                         <form action="update.php?ID=<?php echo $ProductId ?>" method="post">
-                            <input type="text" class="form-control mb-4" placeholder=" Cikkszám " name="productid" value="<?php echo $ProductId ?>">
+                            <input type="number" class="form-control mb-4" placeholder=" Cikkszám " name="productid" value="<?php echo $ProductId ?>">
                             <input type="text" class="form-control mb-4" placeholder=" Termék " name="product" value="<?php echo $Product ?>">
-                           <input type="text" class="form-control mb-4" placeholder=" Egység " name="productamount" value="<?php echo $ProductAmount ?>">
+                           <input type="number" step="1" class="form-control mb-4" placeholder=" Egység " name="productamount" value="<?php echo $ProductAmount ?>">
                            <div class="col text-center">
                             <button class="btn btn-primary" name="update">Szerkesztés</button>
                         </div>
