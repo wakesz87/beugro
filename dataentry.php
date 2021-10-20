@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once("header.php");
 ?>
 <!DOCTYPE html>
@@ -15,33 +15,33 @@ require_once("header.php");
 
 <body class="bg-dark">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 m-auto">
-                    <div class="card mt-5">
-                        <div class="card-title">
-                            <h3 class="bg-primary text-white text-center py-4"> Új Tétel Bevételezése</h3>
-                        </div>
-                        <div class="card-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 m-auto">
+                <div class="card mt-5">
+                    <div class="card-title">
+                        <h3 class="bg-primary text-white text-center py-4"> Új Tétel Bevételezése</h3>
+                    </div>
+                    <div class="card-body">
 
-                            <form action="insert.php" method="post">
-                                <input type="number" class="form-control mb-4" placeholder=" Cikkszám " name="productid">
-                                <input type="text" class="form-control mb-4" placeholder=" Termék " name="product">
-                                <input type="number" class="form-control mb-4" placeholder=" Egység " name="productamount">
+                        <form action="insert.php" method="post">
+                            <input type="number" class="form-control mb-4" placeholder=" Cikkszám " name="productid">
+                            <input type="text" class="form-control mb-4" placeholder=" Termék " name="product">
+                            <input type="number" class="form-control mb-4" placeholder=" Egység " name="productamount">
+                            <div class="col text-center">
+                                <button class="btn btn-primary" name="submit">Bevételezés</button>
+                            </div>
 
-                                <div class="col text-center">
-                                      <button class="btn btn-primary"  name="submit">Bevételezés</button>
-                                </div>
-                              
-                            </form>
+                        </form>
 
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    
+    </div>
+
 </body>
+
 </html>
 
 </html>
