@@ -20,8 +20,8 @@ require_once("header.php");
             <div class="col-lg-6 m-auto">
                 <div class="card mt-5">
                     <div class="card-title">
-                        <h3 class="bg-primary text-white text-center py-4"> Új Tétel Bevételezése</h3>
-                    </div>
+                        <h3 class="bg- text-white text-center py-4"> Új Tétel Bevételezése</h3>
+                    
                     <div class="card-body">
 
                         <form action="insert.php" method="post">

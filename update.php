@@ -5,13 +5,13 @@
     if(isset($_POST['update']))
     {
        
-       // $ProductId = $_POST['product_id'];
+        $ProductNb = $_GET['ID'];
         $Product = $_POST['product_name'];
         $ProductAmount = $_POST['product_amount']; 
-        $ProductId = $_GET['ID'];
+        $ProductId = $_POST['product_id'];
    
 
-        $query = " update records set product_name = '".$Product."', product_amount='".$ProductAmount."' where product_id='".$ProductId."'";
+        $query = " update products set product_name = '".$Product."', product_amount='".$ProductAmount."',product_id='".$ProductId."' where product_nb='".$ProductNb."'";
         $result = mysqli_query($con,$query);
 
         if($result)
